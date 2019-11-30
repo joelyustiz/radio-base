@@ -1,0 +1,11 @@
+{
+    "name": "radio-base",
+    "version": 2,
+    "build": {"src": "index.js", "user": "@now/node"},
+    "env":{
+        "DB_USER": "@radiobase-db-user",
+        "DB_PASSWORD":"@radiobase-db-password",
+        "DB_HOST": "@radiobase-db-host",
+        "DB_NAME": "@radiobase-db-name"
+    }
+}
