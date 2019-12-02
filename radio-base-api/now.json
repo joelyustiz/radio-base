@@ -2,6 +2,7 @@
     "name": "radio-base",
     "version": 2,
     "build": {"src": "index.js", "user": "@now/node"},
+    "routes": [{ "src": "/(.*)", "dest": "index.js" }],
     "env":{
         "DB_USER": "@radiobase-db-user",
         "DB_PASSWORD":"@radiobase-db-password",
