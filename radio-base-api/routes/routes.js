@@ -3,10 +3,10 @@ const mysql = require('mysql');
 const { config } = require('../config')
 
 const bodyParser = require('body-parser')
-const USER = encodeURIComponent(config.db_user);
-const PASSWORD = encodeURIComponent(config.db_password);
-const DB_NAME = encodeURIComponent(config.db_name);
-const DB_HOST = encodeURIComponent(config.db_host);
+const USER = config.db_user;
+const PASSWORD = config.db_password;
+const DB_NAME = config.db_name;
+const DB_HOST = config.db_host;
 
 
 console.log("datos", DB_HOST, USER, PASSWORD, DB_NAME);
